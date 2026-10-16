@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prvi LV</title>
+</head>
+<body>
+    <header>
+        <h1><a href=zadatak1_štelcer.html>OBRAZAC</a></h1>
+    </header>
+    <form>
+
+        <label for="korisnicko_ime">Korisničko ime:</label>
+        <input type="text" id="korisnicko_ime" placeholder="Unesite ime . . ." maxlength="25" required>
+        <br>
+
+        <label for="lozinka">Lozinka:</label>
+        <input type="password" id="lozinka" placeholder="Unesite lozinku . . ." maxlength="25" required>
+        <br>
+
+        <label for="ocjena">Ocjena:</label>
+        <select name="Ocjena" id="ocjena">
+            <option value="nedovoljan">nedovoljan</option>
+            <option value="dovoljan">dovoljan</option>
+            <option value="dobar">dobar</option>
+            <option value="vrlo dobar">vrlo dobar</option>
+            <option value="izvrstan">izvrstan</option>
+        </select>
+        <br>
+
+        <label for="komentar">Komentar:</label>
+        <textarea id="komentar" name="komentar" placeholder="Unesite komentar . . ." rows="7" maxlength="40"></textarea>
+        <br>
+
+        <label for="usmena_ocjena">Usmena ocjena studenta:</label>
+        <br>
+        <input type="radio" id="usmena_ocjena1" name="usmena_ocjena" value="komunikativan">
+        <label for="usmena_ocjena1">komunikativan</label>
+        <br>
+        <input type="radio" id="usmena_ocjena2" name="usmena_ocjena" value="samostalan">
+        <label for="usmena_ocjena2">samostalan</label>
+        <br>
+        <input type="radio" id="usmena_ocjena3" name="usmena_ocjena" value="radišan">
+        <label for="usmena_ocjena3">radišan</label>
+        <br>
+        <input type="radio" id="usmena_ocjena4" name="usmena_ocjena" value="ništa od navedenog" checked>
+        <label for="usmena_ocjena4">ništa od navedenog</label>
+        <br>
+
+        <table border="1">
+            <tr>
+                <button type="submit">Pošalji</button>
+            </tr>
+            
+            <tr>
+                <button type="reset">Poništi</button>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

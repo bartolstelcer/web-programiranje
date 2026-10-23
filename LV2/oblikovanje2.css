@@ -16,7 +16,7 @@ body {
 }
 
 .horizontalno {
-    margin: 25px;
+    margin: 25px 25px 25px 25px;
 }
 
 .horizontalno li {
@@ -51,4 +51,8 @@ body {
     border: solid #ffffff;
     color: #ffffff;
     background-color: #f4e1d2;
+}
+
+.okomito {
+    margin-left: 15px;
 }

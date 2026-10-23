@@ -1,0 +1,46 @@
+body {
+    background-color: lightgray;
+}
+
+p {
+    margin-right: 100px;
+    font-style: italic;
+    color: blue;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.prvi {
+    text-align: center;
+    color: red;
+    font-size: 110%;
+    font-family: "Comic Sans MS", cursive;
+}
+
+#odlomak2 {
+    text-align: justify;
+    font-family: "Verdana", cursive;
+}
+
+h1 {
+    color: red;
+}
+
+a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+a:active {
+    color: gray;
+    text-decoration: none;
+}

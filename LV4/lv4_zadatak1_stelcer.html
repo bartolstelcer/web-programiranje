@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prvi zadatak</title>
+</head>
+<body>
+    <script>
+
+        var firstName = "Bartol";
+        let lastName = "Stelcer";
+        const Name = {name: "Bartol Stelcer"};
+
+        console.log(firstName);
+        console.log(lastName);
+        console.log(Name);
+
+        /*
+        firstName = "Petar";
+        lastName = "Litric";
+        Name = {name: "Petar Litric"};
+        Uncaught TypeError: Assignment to constant variable. at lv4_zadatak1_stelcer.html:21:14
+
+        console.log(firstName)
+        <!--console.log(lastName)
+        <!--console.log(Name)
+        */
+
+        let recenica = "Ovo je prvi JS string primjer";
+        console.log(recenica);
+        console.log(recenica.length);
+        console.log(recenica.toUpperCase());
+        console.log(recenica.toLowerCase());
+        console.log(recenica.substring(0, 3));
+        console.log(recenica);
+
+        let vozila = new Array("avion", "auto", "vlak", "bicikl", "brod", "motocikl", "podmornica");
+        for (let i = 0; i < vozila.length; i++) {
+            console.log("Vozilo broj " + (i + 1) + " je " + vozila[i]);
+        }
+
+        vozila.push("helikopter");
+        for (let vozilo in vozila) {
+            console.log(vozila[vozilo]);
+        }
+
+    </script>
+</body>
+</html>

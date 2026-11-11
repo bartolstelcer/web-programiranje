@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treći zadatak</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="validacija.js" defer></script>
+</head>
+<body>
+
+<h1>Prijava na izborne kolegije</h1>
+
+<form>
+
+    <label for="ime">Ime i prezime:</label>
+    <input type="text" id="ime" placeholder="Unesite ime i prezime . . ." required>
+    <input type="button" id="pozdrav" value="Pozdrav">
+    <br>
+
+    <label for="email">E-mail adresa:</label>
+    <input type="text" id="email" placeholder="Unesite e-mail adresu . . ." required>
+    <br>
+
+    <label for="brojKolegija">Broj kolegija:</label>
+    <input type="number" id="brojKolegija" min="1" max="8" required>
+    <i class="fa-solid fa-circle-info" id="pomoc"></i> 
+    <br>
+
+    <label for="popis">Odabrani kolegiji:</label>
+    <textarea id="popis" cols="50" rows="10" readonly></textarea>
+    <br>
+
+    <p id="rezultat"></p>
+    <br>
+
+    <input type="button" id="kolegiji" value="Kolegiji">
+    <input type="button" id="obrisi" value="Obriši">
+    <br>
+
+    <input type="button" id="prijavi" value="Prijavi se">
+
+</form>
+
+</body>
+</html>

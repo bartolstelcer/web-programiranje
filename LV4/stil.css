@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 24px;
+}
+
+h1 {
+    text-align: center;
+    color: #17365d;
+    margin: 0 0 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 28px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+}
+
+.red {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 10px; align-items: center;
+    margin: 12px 0;
+}
+
+.red > :first-child:not(label) {
+    grid-column: 2;
+}
+
+.red.sirok {
+    align-items: start;
+}
+
+label {
+    text-align: right;
+}
+
+.kontrola {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 240px;
+    padding: 5px;
+}
+
+input[type=number] {
+    width: 70px;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#pomoc {
+    color: #17365d;
+    cursor: help;
+}
+
+#rezultat {
+    text-align: center;
+    min-height: 1.2em;
+    color: #333;
+}
+
+#rezultat.greska {
+    color: #c00000;
+}
+
+.sredina {
+    text-align: center;
+}
+
+button {
+    padding: 5px 12px;
+}

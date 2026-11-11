@@ -91,7 +91,7 @@ document.getElementById("pozdrav").addEventListener("dblclick", function() {
     const osoba = procitajImePrezime();
 
     if (osoba === null) {
-        alert("Molimo unesite ime i prezime.");
+        alert("Pogrešan unos!");
     } else {
         alert("Dobro došli, " + osoba.ime + " " + osoba.prezime + "!");
     }
@@ -132,7 +132,6 @@ document.getElementById("kolegiji").addEventListener("mouseup", function() {
 
 });
 
-// DOGAĐAJ 5: Klik na gumb Obriši
 document.getElementById("obrisi").addEventListener("click", function() {
 
     if (confirm("Želite li obrisati popis kolegija?")) {

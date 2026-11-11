@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekti u JavaScrptu</title>
+</head>
+<body>
+    
+    <h1>Jednostavna tvorba objekta</h1>
+    <div id="psi"></div>
+    <div id="macke"></div>
+    <footer id="izmjena"></footer>
+
+    <script>
+
+        const bijeli={ime:"snjezak", pasmina:"dalmatiner", starost:8};
+        const garavi={ime:"garo", pasmina:"pudlica", starost:2};
+        const stari={ime:"roki", pasmina:"bigl", starost:9};
+        const novi={ime:"mars", pasmina:"bigl", starost:5};
+
+        const ispisPsa = document.getElementById("psi");
+        
+        ispisPsa.innerHTML += 
+        "Ime prvog psa je: " + bijeli.ime
+        + ", pasmina: " + bijeli.pasmina
+        + " i starost: " + bijeli.starost + "<br>";
+
+        ispisPsa.innerHTML +=
+        "Ime drugog psa je: " + garavi.ime
+        + ", pasmina: " + garavi.pasmina
+        + " i starost: " + garavi.starost + "<br>";
+
+        ispisPsa.innerHTML +=
+        "Ime trećeg psa je: " + stari.ime
+        + ", pasmina " + stari.pasmina
+        + " i starost: " + stari.starost + "<br>";
+
+        ispisPsa.innerHTML +=
+        "Ime četvrtog psa je: " + novi.ime
+        + ", pasmina " + novi.pasmina
+        + " i starost: " + novi.starost + "<br>";
+
+    </script>
+    <script src="lv4_zadatak4.js"></script>
+</body>
+</html>

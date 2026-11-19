@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drugi zadatak</title>
+</head>
+<body>
+
+    <img>
+
+    <script>
+        async function dohvatiSliku() {
+            try {
+                const odgovor = await fetch("slika.jpg");
+
+                if (!odgovor.ok) {
+                    throw new Error(`HTTP ${odgovor.status}`);
+                }
+
+                const blob = await odgovor.blob();
+                const adresaSlike = URL.createObjectURL(blob);
+
+                document.querySelector("img").src = adresaSlike;
+
+            } catch (greska) {
+                console.error("Učitavanje nije uspjelo:", greska);
+            }
+        }
+
+        dohvatiSliku();
+    </script>
+
+</body>
+</html>

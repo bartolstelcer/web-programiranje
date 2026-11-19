@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peti zadatak</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem;}
+    .spremnici {display: flex; gap: 1rem;}
+    .spremnik {width: 200px; height: 200px; border: 2px solid #555; display: flex; align-items: flex-start; justify-content: center; padding-top: .5rem; box-sizing: border-box;}
+    .kvadrati {display: flex; gap: 1rem; margin-top: 1rem;}
+    .kvadrat {width: 100px; height: 100px; cursor: grab;}
+    #crni {background: black;}
+    #crveni {background: red;}
+    .aktivan {outline: 4px solid #aaa;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+  <script src="zadatak5.js" defer></script>
+</head>
+<body>
+  <h1>Razvrstaj boje</h1>
+  <div class="spremnici">
+    <div id="spremnik-crni" class="spremnik">Crno</div>
+    <div id="spremnik-crveni" class="spremnik">Crveno</div>
+  </div>
+  <div class="kvadrati">
+    <div id="crni" class="kvadrat" aria-label="Crni kvadrat"></div>
+    <div id="crveni" class="kvadrat" aria-label="Crveni kvadrat"></div>
+  </div>
+  <p id="poruka"></p>
+</body>
+</html>

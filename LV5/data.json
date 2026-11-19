@@ -1,0 +1,1 @@
+[{"ime":"Ante", "godina":25, "zaposlen":true, "alergije":["kikiriki","jagode","macke"], "adresa":{"ulica":"Prva","broj":15,"posta":31000}}, {"ime":"Mira", "godina":16, "zaposlen":false, "alergije":null, "adresa":{"ulica":"Prva","broj":15,"posta":31000}}, {"ime":"Marko", "godina":22, "zaposlen":false, "alergije":null, "adresa":{"ulica":"Druga","broj":1,"posta":31000}}]

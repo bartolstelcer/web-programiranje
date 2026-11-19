@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drugi zadatak</title>
+</head>
+
+<body>
+
+    <script>
+
+        async function dohvatiJSON() {
+
+            try {
+
+                const spremljeno = localStorage.getItem("osobe");
+
+                if (spremljeno !== null) {
+
+                    const osobe = JSON.parse(spremljeno);
+
+                    console.log("Podaci iz localStorage:", osobe);
+
+                    return;
+                }
+
+                const odgovor = await fetch("data.json");
+
+                if (!odgovor.ok) {
+                    throw new Error("HTTP " + odgovor.status);
+                }
+
+                const osobe = await odgovor.json();
+
+                osobe[1] = {
+                    ime: "Bartol",
+                    godina: 23,
+                    zaposlen: false,
+                    alergije: null,
+                    adresa: {
+                        ulica: "Prva ulica",
+                        broj: 1,
+                        posta: 31000
+                    }
+                };
+
+                console.log("Izmijenjeni podaci:", structuredClone(osobe));
+
+                localStorage.setItem("osobe", JSON.stringify(osobe));
+
+                const spremljeniPodaci =
+                    JSON.parse(localStorage.getItem("osobe"));
+
+                console.log("Podaci iz localStorage:", spremljeniPodaci);
+
+            } catch (greska) {
+
+                console.error("Učitavanje nije uspjelo:", greska);
+
+            }
+
+        }
+
+        dohvatiJSON();
+
+    </script>
+
+</body>
+
+</html>

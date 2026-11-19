@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prvi zadatak</title>
+</head>
+
+<body>
+
+    <h1>JSON</h1>
+
+    <script>
+
+        const student = {
+            ime: "Bartol",
+            prezime: "Štelcer",
+            godina_studija: "3",
+            godine: "23",
+            prebivaliste: "Osijek"
+        };
+
+        const mojJSON = JSON.stringify(student);
+        document.write(mojJSON);
+
+        const kopija = JSON.parse(mojJSON);
+        kopija.ime = "Fran";
+
+        console.log("Izvorni objekt:", student);
+        console.log("Kopija nakon promjene:", kopija);
+        console.log("Tip mojJSON:", typeof mojJSON);
+
+    </script>
+
+</body>
+
+</html>

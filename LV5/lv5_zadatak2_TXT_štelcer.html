@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drugi zadatak</title>
+</head>
+
+<body>
+
+    <pre></pre>
+
+    <script>
+        async function dohvatiTekst() {
+            try {
+                const odgovor = await fetch("himna.txt");
+
+                if (!odgovor.ok) {
+                    throw new Error(`HTTP ${odgovor.status}`);
+                }
+
+                const tekst = await odgovor.text();
+
+                document.querySelector("pre").textContent = tekst;
+
+            } catch (greska) {
+                console.error("Učitavanje nije uspjelo:", greska);
+            }
+        }
+
+        dohvatiTekst();
+    </script>
+
+</body>
+
+</html>

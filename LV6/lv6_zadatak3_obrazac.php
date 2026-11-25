@@ -1,8 +1,3 @@
-<?php
-$ime = trim($_GET["ime"] ?? "");
-$prezime = trim($_GET["prezime"] ?? "");
-?>
-
 <!DOCTYPE html>
 <html lang="hr">
 <head>
@@ -12,18 +7,23 @@ $prezime = trim($_GET["prezime"] ?? "");
 </head>
 <body>
     
-    <?php
-    if ($ime !== "" && $prezime !== ""){
-        echo "<h1> Ime i prezime: "
-        . htmlspecialchars($ime)
-        . " "
-        . htmlspecialchars($prezime)
-        . "</h1>";
-    } else {
-        echo "<h1>Dogodila se pogreška.</h1>";
-        echo '<a href="lv6_zadatak3_obrazac.php">Povratak na obrazac</a>';
-    }
-    ?>
+    <h1>Unos podataka</h1>
+
+    <form action="lv6_zadatak3_rezultati.php" method="GET">
+
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
+
+        <br><br>
+
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required>
+
+        <br><br>
+
+        <button type="submit">Pošalji</button>
+
+    </form>
 
 </body>
 </html>

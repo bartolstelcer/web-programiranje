@@ -1,8 +1,6 @@
 <?php
 $datoteka = fopen("tekst.txt", "r");
-
 $str_tekst = fread($datoteka, filesize("tekst.txt"));
-
 fclose($datoteka);
 ?>
 
@@ -16,16 +14,13 @@ fclose($datoteka);
 <body> 
 
     <h1>Analiza datoteke tekst.txt</h1>
-
     <p><?= htmlspecialchars($str_tekst) ?></p>
 
     <?php
     $rijeci = explode(" ", $str_tekst);
-
     $datoteka = fopen("rijeci.txt", "w");
 
     fwrite($datoteka, implode(PHP_EOL, $rijeci));
-
     fclose($datoteka);
     ?>
 
@@ -38,7 +33,7 @@ fclose($datoteka);
     <p>
         <?php
         if ($pozicija !== false){
-            echo "prvi put se slovo k pojavljuje na "
+            echo "Prvi put se slovo k pojavljuje na "
             . ($pozicija + 1)
             . ". mjestu i ukupno se pojavljuje "
             . $broj_pojavljivanja

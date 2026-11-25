@@ -7,18 +7,16 @@
 </head>
 <body>
     
-    <h1>Unos podataka</h1>
+    <h1>Obrazac</h1>
 
     <form action="lv6_zadatak3_rezultati.php" method="GET">
 
-        <label for="ime">Ime:</label>
-        <input type="text" id="ime" name="ime" required>
-
+        <label for="ime">Ime:</label> <br>
+        <input type="text" id="ime" name="ime">
         <br><br>
 
-        <label for="prezime">Prezime:</label>
-        <input type="text" id="prezime" name="prezime" required>
-
+        <label for="prezime">Prezime:</label> <br>
+        <input type="text" id="prezime" name="prezime">
         <br><br>
 
         <button type="submit">Pošalji</button>

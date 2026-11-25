@@ -47,8 +47,8 @@ class Kupac {
 }
 
 $kupacOPG = new Kupac();
-$kupacOPG->postaviIme("Cristiano");
-$kupacOPG->postaviPrezime("Ronaldo");
+$kupacOPG->postaviIme("Bartol");
+$kupacOPG->postaviPrezime("Štelcer");
 
 $broj = 10;
 ?>
@@ -61,14 +61,16 @@ $broj = 10;
     <title>Zadatak 1</title>
 </head>
 <body>
-    
+
+    <h1>Student</h1>
     <ul>
         <?php foreach ($student as $podatak) { ?>
             <li><?= htmlspecialchars($podatak) ?></li>
         <?php } ?>
     </ul>
     <hr>
-    
+
+    <h1>Citroen</h1>
     <?php foreach ($auto["Citroen"] as $kljuc => $vrijednost) { ?>
         <p>
             <?= htmlspecialchars($kljuc) ?>:
@@ -77,16 +79,20 @@ $broj = 10;
     <?php } ?>
     <hr>
 
-    <p>Model: <?= htmlspecialchars($auto["Mercedes"]["model"]) ?></p>
-    <p>Obujam motora: <?= htmlspecialchars($auto["Mercedes"]["obujam_motora"]) ?></p>
-    <p>Boja: <?= htmlspecialchars($auto["Mercedes"]["boja"]) ?></p>
-    <p>Godina proizvodnje: <?= htmlspecialchars($auto["Mercedes"]["godina_proizvodnje"]) ?></p>
-    <p>Gorivo: <?= htmlspecialchars($auto["Mercedes"]["gorivo"]) ?></p>
+    <h1>Mercedes</h1>
+    <p>model: <?= htmlspecialchars($auto["Mercedes"]["model"]) ?></p>
+    <p>obujam_motora: <?= htmlspecialchars($auto["Mercedes"]["obujam_motora"]) ?></p>
+    <p>boja: <?= htmlspecialchars($auto["Mercedes"]["boja"]) ?></p>
+    <p>godina_proizvodnje: <?= htmlspecialchars($auto["Mercedes"]["godina_proizvodnje"]) ?></p>
+    <p>gorivo: <?= htmlspecialchars($auto["Mercedes"]["gorivo"]) ?></p>
     <hr>
 
-    <p>Kvadrat broja <?= $broj ?> je <?= kvadrat($broj) ?></p>
+    <h1>Kvadrat</h1>
+    <p>broj: <?= $broj ?> </p>
+    <p>kvadrat_broja: <?= kvadrat($broj) ?></p>
     <hr>
 
+    <h1>Kupac</h1>
     <p><?= htmlspecialchars($kupacOPG->opis()) ?></p>
 
 </body>
